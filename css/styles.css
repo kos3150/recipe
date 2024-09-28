@@ -63,3 +63,42 @@ nav h2 {
     width: 1px;
 }
 
+/*------------- MEDIA QUERY (medium) ----------------*/
+
+@media screen and (min-width: 768px) {
+    body {
+        display: grid;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    body {
+        display: grid;
+    }
+}
+    
+
+footer{
+    background-color: #F2F2F2;
+    color:#0D0D0D;
+    text-align: center;
+    padding: 0;
+}
+
+footer p {
+    font-family: "Montserrat", system-ui;
+    color:#0D0D0D;
+    text-align: center;
+    padding: 0; 
+}
+
+footer > a{
+    font-family: "Bebas Neue", system-ui;
+    color:#0D0D0D;
+    text-align: center;
+}
+
+
+   
+
+
