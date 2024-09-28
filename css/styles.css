@@ -46,4 +46,20 @@ nav {
 body{
     display: grid;
     min-width: 414px;
+    background-color: var(--blue);
 }
+main{
+    background-color: #F2F2F2;
+}
+
+header{
+    background-color: #F2F2F2;
+    text-align: center;
+}
+
+nav h2 {
+    visibility: hidden;
+    height: 1px;
+    width: 1px;
+}
+
