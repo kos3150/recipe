@@ -103,15 +103,22 @@ header{
 }
 
 h1{
-    /*Montserrat Bold 700 DT 16px*/
+    /* ? Montserrat Bold 700 DT 16px*/
     font-family: "Bebas Neue", system-ui;
     font-size: 40px;
     font-weight: bold;
 }
 
 h2{
-    font-family: "Bebas Neue", system-ui;
     font-size: 30px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+h1, h2, h3 {
+    font-family: "Bebas Neue", system-ui;
     font-weight: bold;
 }
 
@@ -123,30 +130,22 @@ nav {
     grid-template-columns: auto;
 }
 
+nav h2 {
+    visibility:hidden;
+    height: 1px;
+    width: 1px;
+}
+
 nav ul li {
     font-family: "Montserrat", system-ui;
     font-size: 16px;
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 p {
     font-family: "Montserrat", system-ui;
     font-size: 16px;
-    /*font-weight: 400;
-    <p> 16px*/
+   
 }
 
 
