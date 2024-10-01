@@ -31,8 +31,7 @@ time, mark, audio, video {
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: grid;
-    margin: 0 auto;
+	display: block;   
 }
 body {
 	line-height: 1;
@@ -81,24 +80,17 @@ Text Content Montserrat
     --black: #0D0D0D;
     --white: #F2F2F2;
     --aqua: #7ABFBF;
-    --blue: #rgba(122, 191, 191, .5);
+    --blue: rgba(122, 191, 191, .5);
     --red: #EB5428;
 }
 
 /* ----------- GLOBAL STYLES (mobil first/small  --------------- */
 /*---------------- Small-min-width: 414px -----------------------*/
 
-nav {
-    min-width: 414px;
-    width: fit-content;
-    display: grid;
-    grid-template-columns: auto;
-}
-
 body{
     display: grid;
     min-width: 414px;
-    background-color: var(--blue);
+    background-color: rgba(122, 191, 191, .5);
 }
 
 main{
@@ -111,15 +103,52 @@ header{
 }
 
 h1{
+    /*Montserrat Bold 700 DT 16px*/
     font-family: "Bebas Neue", system-ui;
     font-size: 40px;
+    font-weight: bold;
 }
 
-nav h2 {
-    visibility: hidden;
-    height: 1px;
-    width: 1px;
+h2{
+    font-family: "Bebas Neue", system-ui;
+    font-size: 30px;
+    font-weight: bold;
 }
+
+nav {
+    min-width: 414px;
+    font-size: 16px;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+nav ul li {
+    font-family: "Montserrat", system-ui;
+    font-size: 16px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+p {
+    font-family: "Montserrat", system-ui;
+    font-size: 16px;
+    /*font-weight: 400;
+    <p> 16px*/
+}
+
 
 /*------------- MEDIA QUERY ----------------*/
 
@@ -136,6 +165,9 @@ nav h2 {
 }
 
 footer{
+    font-family: "Bebas Neue", system-ui;
+    font-size: 25px;
+    font-weight: bold;
     background-color: #F2F2F2;
     color: #0D0D0D;
     text-align: center;
