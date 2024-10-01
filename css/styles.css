@@ -1,104 +1,56 @@
 /* -------------------- IMPORTED FONTS -------------------- */
 @import url(https://fonts.google.com/share?selection.family=Bebas%20Neue%7CMontserrat:ital,wght@0,400;0,700;1,400);
 
-/* -------------------- ROOT VARIABLES ------------------- 
-    Save all changes*/
-    /*Text Headings Bebas Neue
-    Text Content Montserrat
-    /* text and background colors*/
-:root{
-    font-family: "Bebas Neue", system-ui;
-    /*font-weight: 400;
-    h1 - 40px
-    h2 - 30px
-    h3 - 25px
-    nav a 20px
-    nav span 20px
-    menu li 20px
-    #social li 20px
-    footer 20px*/
-    
-    font-family: "Montserrat", system-ui;
-    /*font-weight: 400;
-    <p> 16px
-    dd 16px
-    li 16px
-    nav 16px
-    input 16px
-    Montserrat Bold 700 DT 16px*/
-    --black: #0D0D0D;
-    --white: #F2F2F2;
-    --aqua: #7ABFBF;
-    --blue: rgba(122, 191, 191, .5);
-    --red: #EB5428;
+/*-------------------- CSS REST ---------------------------*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-
-/* ----------- GLOBAL STYLES (mobil first/small  --------------- */
-/*---------------- Small-min-width: 414px -----------------------*/
-
-nav {
-    min-width: 414px;
-    width: fit-content;
-    display: grid;
-    grid-template-columns: auto;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: grid;
+    margin: 0 auto;
 }
-
-body{
-    display: grid;
-    min-width: 414px;
-    background-color: var(--blue);
+body {
+	line-height: 1;
 }
-main{
-    background-color: #F2F2F2;
+ol, ul {
+	list-style: none;
 }
-
-header{
-    background-color: #F2F2F2;
-    text-align: center;
+blockquote, q {
+	quotes: none;
 }
-
-nav h2 {
-    visibility: hidden;
-    height: 1px;
-    width: 1px;
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
 }
-
-/*------------- MEDIA QUERY (medium) ----------------*/
-
-@media screen and (min-width: 768px) {
-    body {
-        display: grid;
-    }
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
-
-@media screen and (min-width: 1280px) {
-    body {
-        display: grid;
-    }
-}
-    
-
-footer{
-    background-color: #F2F2F2;
-    color:#0D0D0D;
-    text-align: center;
-    padding: 0;
-}
-
-footer p {
-    font-family: "Montserrat", system-ui;
-    color:#0D0D0D;
-    text-align: center;
-    padding: 0; 
-}
-
-footer > a{
-    font-family: "Bebas Neue", system-ui;
-    color:#0D0D0D;
-    text-align: center;
-}
-
-
-   
 
 
