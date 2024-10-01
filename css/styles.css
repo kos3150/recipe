@@ -53,4 +53,38 @@ table {
 	border-spacing: 0;
 }
 
+/* -------------------- ROOT VARIABLES ------------------- 
+Save all changes*/
+/*Text Headings Bebas Neue
+Text Content Montserrat
+/* text and background colors*/
+
+:root{
+    font-family: "Bebas Neue", system-ui;
+    /*font-weight: 400;
+    h1 - 40px
+    h2 - 30px
+    h3 - 25px
+    nav a 20px
+    nav span 20px
+    menu li 20px
+    #social li 20px
+    footer 20px*/
+
+    font-family: "Montserrat", system-ui;
+    /*font-weight: 400;
+    <p> 16px
+    dd 16px
+    nav 16px
+    input 16px
+    Montserrat Bold 700 DT 16px*/
+    --black: #0D0D0D;
+    --white: #F2F2F2;
+    --aqua: #7ABFBF;
+    --blue: #rgba(122, 191, 191, .5);
+    --red: #EB5428;
+}
+
+
+
 
