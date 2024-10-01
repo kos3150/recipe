@@ -85,6 +85,36 @@ Text Content Montserrat
     --red: #EB5428;
 }
 
+/* ----------- GLOBAL STYLES (mobil first/small  --------------- */
+/*---------------- Small-min-width: 414px -----------------------*/
+
+nav {
+    min-width: 414px;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+body{
+    display: grid;
+    min-width: 414px;
+    background-color: var(--blue);
+}
+
+main{
+    background-color: #F2F2F2;
+}
+
+header{
+    background-color: #F2F2F2;
+    text-align: center;
+}
+
+nav h2 {
+    visibility: hidden;
+    height: 1px;
+    width: 1px;
+}
 
 
 
