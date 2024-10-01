@@ -59,7 +59,7 @@ Text Content Montserrat
 /* text and background colors*/
 
 :root{
-    font-family: "Bebas Neue", system-ui;
+    font-family: "Bebas Regular", system-ui;
     /*font-weight: 400;
     h1 - 40px
     h2 - 30px
@@ -90,44 +90,67 @@ Text Content Montserrat
 body{
     display: grid;
     min-width: 414px;
+    margin: auto;
     background-color: rgba(122, 191, 191, .5);
 }
 
 main{
-    background-color: #F2F2F2;
+    background-color: #7ABFBF;
+    margin:auto;
+    padding: 25px;
 }
 
 header{
     background-color: #F2F2F2;
+    display: grid;    
     text-align: center;
+    padding: 1rem 0;
 }
 
 h1{
-    /* ? Montserrat Bold 700 DT 16px*/
-    font-family: "Bebas Neue", system-ui;
+    font-family: "Bebas Regular", system-ui;
+    line-height:2em;
     font-size: 40px;
     font-weight: bold;
+    padding-left:1rem;
 }
 
 h2{
     font-size: 30px;
+    text-align: left;
+}
+
+h2 ul {
+    font-family: "Bebas Regular", system-ui;
+    text-align: left;
+    font-weight: bold;
 }
 
 h3{
     font-size: 25px;
+    text-align: center;
+    padding: 5px;
 }
 
 h1, h2, h3 {
-    font-family: "Bebas Neue", system-ui;
+    font-family: "Bebas Regular", system-ui;
+    text-align: center;
     font-weight: bold;
 }
 
 nav {
     min-width: 414px;
-    font-size: 16px;
-    width: fit-content;
-    display: grid;
-    grid-template-columns: auto;
+    font-family: "Bebas Regular", system-ui; 
+    text-align: center;
+    color: #EB5428;
+    font-weight: bold;
+    font-size: 16px;  
+}
+
+nav a {
+    font-family: "Bebas Regular", system-ui;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 nav h2 {
@@ -136,16 +159,40 @@ nav h2 {
     width: 1px;
 }
 
-nav ul li {
-    font-family: "Montserrat", system-ui;
-    font-size: 16px;
-
+nav span {
+    font-family: "Bebas Regular", system-ui;
+    font-size: 20px;
 }
 
-p {
-    font-family: "Montserrat", system-ui;
+nav ul {
+    font-family: "Montserrat Regular", system-ui;
+    color: #EB5428;
     font-size: 16px;
-   
+    padding: 1rem;   
+}
+
+menu li {
+    font-family: "Bebas Regular", system-ui;
+    font-size: 20px;
+}
+
+li {
+    font-family: "Montserrat Regular", system-ui;
+    font-size: 20px;
+}
+
+#social li {
+    font-family: "Bebas Regular", system-ui;
+    font-size: 16px;
+}
+p {
+    font-family: "Montserrat Regular", system-ui;
+    font-size: 16px;  
+}
+
+input {
+    font-family: "Montserrat Regular", system-ui;
+    font-size: 16px;  
 }
 
 
@@ -164,7 +211,7 @@ p {
 }
 
 footer{
-    font-family: "Bebas Neue", system-ui;
+    font-family: "Bebas Regular", system-ui;
     font-size: 25px;
     font-weight: bold;
     background-color: #F2F2F2;
@@ -174,14 +221,15 @@ footer{
 }
 
 footer p {
-    font-family: "Montserrat", system-ui;
+    font-family: "Montserrat Regular", system-ui;
+    font-size: 16px;
     color: #0D0D0D;
     text-align: center;
     padding: 0;
 }
 
 footer > a{
-    font-family: "Bebas Neue", system-ui;
+    font-family: "Bebas Regular", system-ui;
     color: #0D0D0D;
     text-align: center;
 }
