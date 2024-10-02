@@ -104,7 +104,7 @@ header{
     background-color: #F2F2F2;
     display: grid;    
     text-align: center;
-    padding: 1rem 0;
+    padding: 10px;
 }
 
 h1{
@@ -112,7 +112,7 @@ h1{
     line-height:2em;
     font-size: 40px;
     font-weight: bold;
-    padding-left:1rem;
+    padding-left:10px;
 }
 
 h2{
@@ -168,7 +168,7 @@ nav ul {
     font-family: "Montserrat Regular", system-ui;
     color: #EB5428;
     font-size: 16px;
-    padding: 1rem;   
+    padding: 10px;   
 }
 
 menu li {
@@ -185,6 +185,12 @@ li {
     font-family: "Bebas Regular", system-ui;
     font-size: 16px;
 }
+
+section {
+    font-family: "Bebas Regular", system-ui;
+    font-size: 16px;
+}
+
 p {
     font-family: "Montserrat Regular", system-ui;
     font-size: 16px;  
@@ -194,7 +200,6 @@ input {
     font-family: "Montserrat Regular", system-ui;
     font-size: 16px;  
 }
-
 
 /*------------- MEDIA QUERY ----------------*/
 
@@ -217,7 +222,7 @@ footer{
     background-color: #F2F2F2;
     color: #0D0D0D;
     text-align: center;
-    padding: 50px;
+    padding: 20px;
 }
 
 footer p {
@@ -225,14 +230,14 @@ footer p {
     font-size: 16px;
     color: #0D0D0D;
     text-align: center;
-    padding: 50px;
+    padding: 15px;
 }
 
 footer > a{
     font-family: "Bebas Regular", system-ui;
     color: #0D0D0D;
     text-align: center;
-}
+    }
 
 
 
