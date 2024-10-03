@@ -90,6 +90,32 @@ body{
     background-color: rgba(122, 191, 191, .5);
 }
 
+/*------------- MEDIA QUERY (small) ----------------*/
+
+@media screen and (max-width: 414px) {
+
+    body {
+        display: grid;
+        background-color: #F2F2F2;
+    }  
+}
+
+/*------------- MEDIA QUERY (medium) ----------------*/
+@media screen and (min-width: 768px) {
+    body {
+        display: grid;
+        background-color: #F2F2F2;
+    }
+}
+
+/*------------- MEDIA QUERY (large) ----------------*/
+@media screen and (min-width: 1280px) {
+    body {
+        display: grid;
+        background-color: #F2F2F2;
+    }
+}
+
 html {
     box-sizing: border-box;
 }
@@ -178,28 +204,9 @@ img {
 }
 
 
-/*------------- MEDIA QUERY (small) ----------------*/
 
-@media screen and (max-width: 414px) {
 
-    body {
-        display: grid;
-    }  
-}
 
-/*------------- MEDIA QUERY (medium) ----------------*/
-@media screen and (min-width: 768px) {
-    body {
-        display: grid;
-    }
-}
-
-/*------------- MEDIA QUERY (large) ----------------*/
-@media screen and (min-width: 1280px) {
-    body {
-        display: grid;
-    }
-}
     
 
 footer{
