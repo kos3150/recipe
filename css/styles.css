@@ -87,7 +87,15 @@ table {
 
 body{
     min-width: 414px;
-    background-color: var(--blue);
+    background-color: rgba(122, 191, 191, .5);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 main{
@@ -99,6 +107,7 @@ main{
 header{
     background-color: #F2F2F2;
 }
+
 
 nav {
     background-color: #F2F2F2;
@@ -165,7 +174,7 @@ a[href="#top"] {
 }
 
 img {
-    display: block;
+    max-width: 100%;
 }
 
 
