@@ -112,11 +112,12 @@ body{
 @media screen and (min-width: 1280px) {
     body {
         display: grid;
-        background-color: #F2F2F2;
+        background-color: rgba(122, 191, 191, .5); 
     }
 }
 
 html {
+    display:block;
     box-sizing: border-box;
 }
 
@@ -125,9 +126,12 @@ html {
 }
 
 main{
-    background-color: rgba(122, 191, 191, .5);
-    font-family: "Montserrat", system-ui;
+    font-family: "Bebas Neue", system-ui;
+    font-weight: regular;
     font-size: 16px;
+    background-color: rgba(122, 191, 191, .5);
+    margin: 2rem;
+    padding: 1rem;
 }
 
 header{
@@ -138,10 +142,7 @@ header{
 nav {
     background-color: #F2F2F2;
     min-width: 414px;
-    width: fit-content;
-    display: grid;
-    padding: 10px;
-    
+    width: fit-content;   
 }
 
 nav h2 {
@@ -167,13 +168,45 @@ h3{
     font-family: "Bebas Neue", system-ui;
     font-weight: bold;
     font-size: 25px;
+    text-align: center;
+}
+
+p {
+    font-family: "Bebas Neue", system-ui;
+    font-weight: regular;
+    font-size: 25px; 
+}
+
+section h4{
+    font-family: "Bebas Neue", system-ui;
+    font-weight: bold;
+    font-size: 25px; 
+}
+
+section h5{
+    font-family: "Bebas Neue", system-ui;
+    font-weight: bold;
+    font-size: 20px; 
+}
+
+figure p {
+    font-family: "Bebas Neue", system-ui;
+    font-weight: regular;
+    font-size: 25px;
+    padding: 5px;
+}
+
+figcaption {
+    font-family: "Bebas Neue", system-ui;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 5px; 
 }
 
 section ul details{
     font-family: "Bebas Neue", system-ui;
     font-size: 16px;
 }
-
 
 section ingredients{
     font-family: "Bebas Neue", system-ui;
@@ -203,18 +236,12 @@ img {
     max-width: 100%;
 }
 
-
-
-
-
-    
-
 footer{
+    display: grid;
     background-color: #F2F2F2;
     color:#0D0D0D;
     text-align: center;
-    padding: 1rem 2rem;
-    margin: auto;
+    padding: 10rem;
 }
 
 footer p {
@@ -222,13 +249,13 @@ footer p {
     font-weight: bold;
     color:#EB5428;
     text-align: center;
-    padding: 0; 
 }
 
 footer > a{
     font-family: "Bebas Neue", system-ui;
     color:#0D0D0D;
     text-align: center;
+    padding: 5px;
 }
 
 
