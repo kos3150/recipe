@@ -125,6 +125,11 @@ html {
     box-sizing: inherit;
 }
 
+img {
+    max-width: 100%;
+    margin: 5px 30px 15px 30px;
+}
+
 main{
     font-family: "Bebas Neue", system-ui;
     font-weight: regular;
@@ -136,8 +141,8 @@ main{
 
 header{
     background-color: #F2F2F2;
+    margin: 5px 30px 15px 30px;
 }
-
 
 nav {
     background-color: #F2F2F2;
@@ -151,11 +156,11 @@ nav h2 {
     width: 1px;
 }
 
-section h2 {
+h2 {
     visibility: hidden;
     height: 1px;
     width: 1px;
-}
+}  
 
 h1{
     font-family: "Bebas Neue", system-ui;
@@ -175,6 +180,11 @@ p {
     font-family: "Bebas Neue", system-ui;
     font-weight: regular;
     font-size: 25px; 
+}
+
+ul li {
+    font-family: "Bebas Neue", system-ui;
+    font-weight: regular; 
 }
 
 section h4{
@@ -225,6 +235,10 @@ section p{
     font-size: 16px;
 }
 
+section {
+    margin: 5px 30px 15px 30px;
+}
+
 a[href="#top"] {
     background-color: #EB5428;
     border:2px solid #F2F2F2;
@@ -232,30 +246,28 @@ a[href="#top"] {
     line-height: 3em;
 }
 
-img {
-    max-width: 100%;
-}
+
 
 footer{
     display: grid;
     background-color: #F2F2F2;
     color:#0D0D0D;
-    text-align: center;
-    padding: 10rem;
+   
+    margin: 5px 30px 15px 30px;
+    padding: 20px 30px 15px 20px;
 }
 
 footer p {
     font-family: "Montserrat", system-ui;
     font-weight: bold;
     color:#EB5428;
-    text-align: center;
+    
 }
 
 footer > a{
     font-family: "Bebas Neue", system-ui;
     color:#0D0D0D;
-    text-align: center;
-    padding: 5px;
+    
 }
 
 
