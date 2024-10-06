@@ -251,8 +251,7 @@ a[href="#top"] {
 footer{
     display: grid;
     background-color: #F2F2F2;
-    color:#0D0D0D;
-   
+    color:#0D0D0D;  
     margin: 5px 30px 15px 30px;
     padding: 20px 30px 15px 20px;
 }
@@ -260,14 +259,12 @@ footer{
 footer p {
     font-family: "Montserrat", system-ui;
     font-weight: bold;
-    color:#EB5428;
-    
+    color:#EB5428;    
 }
 
 footer > a{
     font-family: "Bebas Neue", system-ui;
-    color:#0D0D0D;
-    
+    color:#0D0D0D;   
 }
 
 
