@@ -89,50 +89,63 @@ body{
     background-color: #F2F2F2;
     max-width: 414px;
     margin: 0 auto;
-    display: grid;
+    display:grid;
     grid-template-areas:
-    "header header"
+    "header"
     "details"
     "ingredients"
     "directions"
-    "aside"
-    "footer";
+    "aside aside"
+    "footer";  
 }
 
-html {
+header svg{
+    max-width: 100%;
+    transition: all 500ms;
+}
+
+header > a:hover svg{
+    fill: #EB5428;
+    transform: scale(1.25)
+}
+
+header, footer {
     background-color: #F2F2F2;
-    max-width: 414px;  
 }
 
 *, *:before, *:after {
     box-sizing: inherit;
 }
 
-header {
-    grid-area: header;
-    padding-top: 180px;
+html {
+    background-color: #F2F2F2;
+    max-width: 414px;
+    margin: 0 auto;
+    display:grid;
+    grid-template-areas:
+    "header header"
+    "details"
+    "ingredients"
+    "directions"
+    "aside aside"
+    "footer";
 }
-
-header svg{
-    max-width: 100%;
-    transition: all 100ms;
+header {
+    grid-area:header;
+    padding-top: 180px;
 }
 
 header img {
     width: 100%;
 }
 
-header > a:hover svg{
-    fill: #EB5428;
-    transform: scale(1.25);
-}
-
 aside {
     grid-area: aside;
+    background-color: #7ABFBF;
 }
 
 aside img {
-    max-width: 100%;
+    width: 100%;
 }
 
 aside section {
@@ -141,20 +154,23 @@ aside section {
     margin: 10px 0;
 }
 
+
 .rating {
     display: flex;
     margin-left: 10px;
 }
 
 aside section:hover {
-    border-color: #EB5428;
+    background-color: #F2F2F2;
 }
 
 nav {
     grid-area: nav;
-    max-width: 414px;
+    min-width: 414px;
     background-color: #F2F2F2;
     box-shadow: 0px 3px 3px #bbb;
+    position: fixed;
+    top: 0;  
 }
 
 nav h2 {
@@ -208,7 +224,8 @@ p {
 }
 
 ul li {
-    font-family: "Bebas Neue", system-ui;   
+    font-family: "Bebas Neue", system-ui;
+    
 }
 
 section ul details{
@@ -216,35 +233,24 @@ section ul details{
     font-size: 16px;
 }
 
-section div {
-    display: grid;
-    font-family: "Bebas Neue", system-ui;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-section ul ingredients{
-    display: grid;
+section ingredients{
     font-family: "Bebas Neue", system-ui;
     font-weight: bold;
     font-size: 16px;
 }
 
 section ul directions{
-    display: grid;
     font-family: "Bebas Neue", system-ui;
     font-weight: bold;
     font-size: 16px;
 }
 
 section p{
-    display: grid;
     font-family: "Montserrat", system-ui;    
     font-size: 16px;
 }
 
 section {
-    display: grid;
     margin: 5px 30px 15px 30px;
 }
 
@@ -259,7 +265,7 @@ footer{
 footer p {
     font-family: "Montserrat", system-ui;
     font-weight: bold;
-    color:#0D0D0D;    
+    color:#EB5428;    
 }
 
 footer > a{
@@ -291,37 +297,41 @@ nav {
 }
 
 main {
-    background-color: #F2F2F2;
+    background-color: rgba(122, 191, 191, .5);
     grid-template-columns:1fr;
 }
 
 section {
-    background-color: #F2F2F2;
+    background-color: #7ABFBF;
     color: #0D0D0D;
 }
 }
 
 @media screen and (min-width: 1280px) {
     body {
-        background-color:#F2F2F2;
+        background-color:rgba(122, 191, 191, .5);
     }
         
 header, footer {
         background-color: #F2F2F2;
         color:#0D0D0D;
     }
-
+}
 nav {
     background-color:#F2F2F2;
-    color: #F2F2F2;
+    color: rgba(122, 191, 191, .5);
 }
 
 main {
-    background-color: #F2F2F2; 
+    background-color:rgba(122, 191, 191, .5); 
     grid-template-columns:1fr;
 }
 
 section {
-    background-color: #F2F2F2;
+    background-color: #7ABFBF;
 }
-}
+
+
+
+
+
