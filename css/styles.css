@@ -90,49 +90,76 @@ body{
     background-color: rgba(122, 191, 191, .5);
 }
 
-/*------------- MEDIA QUERY (small) ----------------*/
-
-@media screen and (max-width: 414px) {
-
-    body {
-        display: grid;
-        background-color: #F2F2F2;
-    }  
-}
-
-/*------------- MEDIA QUERY (medium) ----------------*/
-@media screen and (min-width: 768px) {
-    body {
-        display: grid;
-        background-color: #F2F2F2;
-    }
-}
-
-/*------------- MEDIA QUERY (large) ----------------*/
-@media screen and (min-width: 1280px) {
-    body {
-        display: grid;
-        background-color: rgba(122, 191, 191, .5); 
-    }
-}
-
 html {
-    display:block;
-    box-sizing: border-box;
+    background-color: #F2F2F2;
+    max-width: 414px;
+    margin: 0 auto;
+    display:grid;
+    grid-template-areas:
+    "header"
+    "details"
+    "ingredients"
+    "directions"
+    "aside"
+    "footer";
+}
+header {
+    grid-area: header;
+    padding-top: 180;
+}
+
+header img {
+    width: 100%;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #7ABFBF;
+}
+
+aside img {
+    width: 100%;
+}
+
+aside section {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin: 10px 0;
 }
 
 *, *:before, *:after {
     box-sizing: inherit;
 }
+.rating {
+    display: flex;
+    margin-left: 10px;
+}
+
+aside section:hover {
+    background-color: #F2F2F2;
+}
+
+nav {
+    grid-area: nav;
+    min-width: 414px;
+    background-color: #F2F2F2;
+    box-shadow: 0px 3px 3px #bbb;
+    position: fixed;
+    top: 0;  
+}
+
+nav h2 {
+    visibility: hidden;
+    height: 1px;
+    width: 1px;
+}
 
 img {
     max-width: 100%;
-    margin: 5px 30px 15px 30px;
 }
 
 main{
     font-family: "Bebas Neue", system-ui;
-    font-weight: regular;
     font-size: 16px;
     background-color: rgba(122, 191, 191, .5);
     margin: 2rem;
@@ -144,17 +171,7 @@ header{
     margin: 5px 30px 15px 30px;
 }
 
-nav {
-    background-color: #F2F2F2;
-    min-width: 414px;
-    width: fit-content;   
-}
 
-nav h2 {
-    visibility: hidden;
-    height: 1px;
-    width: 1px;
-}
 
 h2 {
     visibility: hidden;
@@ -178,13 +195,12 @@ h3{
 
 p {
     font-family: "Bebas Neue", system-ui;
-    font-weight: regular;
     font-size: 25px; 
 }
 
 ul li {
     font-family: "Bebas Neue", system-ui;
-    font-weight: regular; 
+    
 }
 
 section h4{
@@ -201,7 +217,6 @@ section h5{
 
 figure p {
     font-family: "Bebas Neue", system-ui;
-    font-weight: regular;
     font-size: 25px;
     padding: 5px;
 }
@@ -268,3 +283,18 @@ footer > a{
 }
 
 
+/*------------- MEDIA QUERY (medium) ----------------*/
+@media screen and (min-width: 768px) {
+    body {
+        display: grid;
+        background-color: #F2F2F2;
+    }
+}
+
+/*------------- MEDIA QUERY (large) ----------------*/
+@media screen and (min-width: 1280px) {
+    body {
+        display: grid;
+        background-color: rgba(122, 191, 191, .5); 
+    }
+}
