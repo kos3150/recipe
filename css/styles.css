@@ -109,6 +109,8 @@ html {
 }
 
 header {
+    background-color: #F2F2F2;
+    display: grid;
     grid-area: header;
     padding-top: 180px;
 }
@@ -119,7 +121,7 @@ header svg{
 }
 
 header img {
-    width: 100%;
+    max-width: 100%;
 }
 
 header > a:hover svg{
@@ -184,6 +186,7 @@ h1{
     font-weight: bold;
     text-align: center;
 }
+
 h2 {
     visibility: hidden;
     height: 1px;

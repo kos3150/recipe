@@ -1,0 +1,168 @@
+/* -------------------- IMPORTED FONTS -------------------- */
+@import url(https://fonts.google.com/share?selection.family=Bebas%20Neue%7CMontserrat:ital,wght@0,400;0,700;1,400);
+
+/* -------------------- CSS RESET -------------------- */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: grid;
+	margin: 0 auto;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ----------- ROOT Variables --------------- */
+
+:root{
+    font-family: "Bebas Neue", system-ui;
+    /*font-weight: 400;
+    h1 - 40px
+    h2 - 30px
+    h3 - 25px
+    nav a 20px
+    nav span 20px
+    menu li 20px
+    #social li 20px
+    footer 20px*/
+    
+    font-family: "Montserrat", system-ui;
+    /*font-weight: 400;
+    <p> 16px
+    dd 16px
+    li 16px
+    nav 16px
+    input 16px
+    Montserrat Bold 700 DT 16px*/
+    --black: #0D0D0D;
+    --white: #F2F2F2;
+    --aqua: #7ABFBF;
+    --blue: rgba(122, 191, 191, .5);
+    --red: #EB5428;
+}
+
+/* ----------- GLOBAL STYLES (mobil first/small  --------------- */
+/*---------------- Small-min-width: 414px -----------------------*/
+
+html {
+    background-color: rgba(122, 191, 191, .5);
+}
+body {
+    background-color: #F2F2F2;
+    max-width: 414px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "details"
+    "ingredients"
+    "directions"
+    "aside"
+    "footer";
+}
+header {
+    grid-area: header;
+    padding-top: 180px;
+}
+header img {
+    width: 100%;
+}
+nav {
+    grid-area: nav;
+    min-width: 414px;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 3px #bbb;
+    position: fixed;
+    top: 0;
+    z-index:5;
+}
+nav ul {
+    grid-area: hamberger;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+    max-height: 0;
+}
+nav li img {
+    display: none;
+}
+nav li a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+}
+nav label {
+    cursor: pointer;
+    display: inline-block;
+    user-select: none;
+    position: relative;
+    bottom: 5px;
+    left: 30px;
+}
+nav span {
+    display: block;
+    position: relative;
+ }
+nav label svg {
+    display: block;
+}
+label span:before, label span:after {
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+nav input {
+    display: none;
+}
+nav input:checked ~ ul {
+    max-height: 550px;
+}
+nav h2, footer h2, footer h3, aside dd, fieldset, h4 {
+    visibility: hidden;
+    height: 1px;
+    width: 1px;
+}
