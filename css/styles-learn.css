@@ -170,17 +170,3 @@ nav h2, footer h2, footer h3, aside dd, fieldset, h4 {
 /* --------------- Do not edit CSS above here -------------- */
 /* -------------------- Kim CSS goes here ------------------ */
 
-nav a {
-    grid-area: logo;
-    background-color: #F2F2F2;
-    color:#EB5428;
-    text-decoration: none;
-    padding: 0px 100px;
-    line-height: 40px;
-}
-
-nav id dropdown {
-    grid-area: logo;
-    width: 40px;
-    height: 40px;
-}
