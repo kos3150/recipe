@@ -169,4 +169,33 @@ nav h2, footer h2, footer h3, aside dd, fieldset, h4 {
 
 /* --------------- Do not edit CSS above here -------------- */
 /* -------------------- Kim CSS goes here ------------------ */
+h1 {
+    font-family: "Bebas Neue", system-ui;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center; 
+}
+
+menu {
+    display: grid;
+    font-family: "Bebas Neue", system-ui;
+    color: #EB5428;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 5px;
+}
+
+menu li > a {
+    font-family: "Bebas Neue", system-ui;
+    color: #EB5428;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+
+
+
+
 
