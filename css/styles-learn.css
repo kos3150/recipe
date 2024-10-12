@@ -169,38 +169,41 @@ nav h2, footer h2, footer h3, aside dd, fieldset, h4 {
 
 /* --------------- Do not edit CSS above here -------------- */
 /* -------------------- Kim CSS goes here ------------------ */
-
+/* ---- Heading STREET TACOS ------ */
 h1 {
     font-family: "Bebas Neue", system-ui;
+    text-align: center;
     color: var(--black);
     font-size: 40px;
     font-weight: bold;
 }
-
+/* ----- Top Navigation Save Share Print Jump to Menu ----*/
 menu li a{
     font-family: "Bebas Neue", system-ui;
+    background-color: var(--white);
     color: var(--red);
     font-size: 20px;
     font-weight: bold;
 }
-
-nav a {
-    font-size: 20px;
-    color: var(--red);
-    font-weight: bold;
+/* ----- Top Navigation Save Share Print Jump to Menu ----*/
+#top menu {
+    grid-template-columns: 1fr 3fr 1fr 3fr;
+    max-width: 100%;
+    padding: 10px;
+    margin: 2px;
 }
 
+/* ------ MENU - top text ---- --*/
 nav span {
     color: var(--black);
     font-size: 20px;
     font-weight: bold;
     padding: 1px 10px 10px 10px;
 }
-/*Hamburger Logo*/
+/*------ Hamburger Logo ------*/
 nav svg {
     padding: 10px;
+    margin-top: 2px;
 }
 
-label dropdown {
-    padding: 10px;
-}
+
