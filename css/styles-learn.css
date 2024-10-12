@@ -169,33 +169,38 @@ nav h2, footer h2, footer h3, aside dd, fieldset, h4 {
 
 /* --------------- Do not edit CSS above here -------------- */
 /* -------------------- Kim CSS goes here ------------------ */
+
 h1 {
     font-family: "Bebas Neue", system-ui;
+    color: var(--black);
     font-size: 40px;
     font-weight: bold;
-    text-align: center; 
 }
 
-menu {
-    display: grid;
+menu li a{
     font-family: "Bebas Neue", system-ui;
-    color: #EB5428;
-    font-size: 16px;
+    color: var(--red);
+    font-size: 20px;
     font-weight: bold;
-    margin: 1rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 5px;
 }
 
-menu li > a {
-    font-family: "Bebas Neue", system-ui;
-    color: #EB5428;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+nav a {
+    font-size: 20px;
+    color: var(--red);
+    font-weight: bold;
 }
 
+nav span {
+    color: var(--black);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 1px 10px 10px 10px;
+}
+/*Hamburger Logo*/
+nav svg {
+    padding: 10px;
+}
 
-
-
-
-
-
+label dropdown {
+    padding: 10px;
+}
