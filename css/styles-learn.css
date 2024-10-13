@@ -169,7 +169,8 @@ nav h2, footer h2, footer h3, aside dd, fieldset, h4 {
 
 /* --------------- Do not edit CSS above here -------------- */
 /* -------------------- Kim CSS goes here ------------------ */
-/* ---- Heading STREET TACOS ------ */
+/* ---- h1 heading - STREET TACOS ------ */
+
 h1 {
     font-family: "Bebas Neue", system-ui;
     text-align: center;
@@ -190,6 +191,7 @@ menu li a{
     padding: 20px;
     margin: 2px;
 }
+
 /* ----- Top Navigation Save Share Print Jump to Menu ----*/
 #top li > a{
     text-decoration: none;
@@ -204,12 +206,18 @@ nav span {
     font-weight: bold;
     padding: 1px 10px 10px 10px;
 }
+
 /*------ Hamburger Logo ------*/
 nav svg {
     padding: 10px;
     margin-top: 2px;
 }
+
 /* ------ MENU - li a ---- --*/
 a{
-    display: inline-block;
+    display: block;
+    padding: 16px;
 }
+
+
+
