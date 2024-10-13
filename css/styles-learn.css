@@ -210,30 +210,39 @@ h1 {
     padding: 20px;
     margin: 2px;
 }
-
+/* ----- SAVE SHARE PRINT JUMP ----*/
 /* ----- Add styles for menu links ----*/
-menu li a{
+#top menu li a{
     font-family: "Bebas Neue", system-ui;
     color: var(--red);
     font-size: 20px;
     font-weight: bold;
 }
 
-
-/* ----- Top Navigation Save Share Print Jump to Menu ----*/
+/* ----- Nav SAVE SHARE PRINT  ----*/
+/* ----- Horizontal Layout of Links -----*/
 #top menu {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 20px;
-    margin: 2px;
+    margin: 20px;
 }
 
-/* ----- Top Navigation Save Share Print Jump to Menu ----*/
+/* ----- Top Navigation SAVE SHARE PRINT to Menu ----*/
+/* ----- This removes the line under the svg icons ----*/
 #top li > a{
     text-decoration: none;
     padding: 2em;
     text-align: center;
 }
+
+/* ------ Unsure about selector here ------*/
+/*#top menu li a svg {
+    padding: 5px;
+    margin-top: 2px;*/
+
+
 /* ------ MENU - top text ---- --*/
+/* ------ Controls Hamburger Menu ---- --*/
 nav span {
     color: var(--black);
     text-align: justify;
@@ -242,18 +251,51 @@ nav span {
     padding: 1px 10px 10px 10px;
 }
 
-/*------ Hamburger Logo ------*/
+/*------ Controls Hamburger Logo Padding & Margin ------*/
 nav svg { 
     padding: 10px;
     margin-top: 2px;
 }
 
-
-/* ------ MENU - li a ---- --*/
+/* ------ MENU - li a ------*/
+/*This selector affects the page layout.*/
 a{
     display: block;
     padding: 16px;
 }
+/*This selector is SAVE*/
+#top menu li:nth-child(1) a{
+    color: var(--red);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 20px;
+}
+/*This selector is SHARE*/
+#top menu li:nth-child(2) a {
+    color: var(--red);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 20px;
+}
+/*This selector is PRINT*/
+#top menu li:nth-child(3) a {
+    color: var(--red);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 20px;
+}
+
+#top menu li:nth-child(4) a {
+    color: var(--red);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 20px;
+}
+
 
 
 
