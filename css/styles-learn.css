@@ -151,6 +151,30 @@ nav label svg {
 label span:before, label span:after {
     content: '';
     display: block;
+    
+    /* Menu selectors */
+    .menu-item {
+        display: block;
+    }
+    
+    .menu-link {
+        display: block;
+        padding: 10px 15px;
+        text-decoration: none;
+    }
+    
+    .menu-icon {
+        display: inline-block;
+        margin-right: 5px;
+    }
+    
+    .sub-menu {
+        display: none;
+    }
+    
+    .menu-item:hover .sub-menu {
+        display: block;
+    }
     height: 100%;
     position: absolute;
     width: 100%;
@@ -179,12 +203,23 @@ h1 {
     font-weight: bold;
 }
 /* ----- Top Navigation Save Share Print Jump to Menu ----*/
+
+/* Add styles for menu list items */
+#top menu li {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 20px;
+    margin: 2px;
+}
+
+/* ----- Add styles for menu links ----*/
 menu li a{
     font-family: "Bebas Neue", system-ui;
     color: var(--red);
     font-size: 20px;
     font-weight: bold;
 }
+
+
 /* ----- Top Navigation Save Share Print Jump to Menu ----*/
 #top menu {
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -208,16 +243,19 @@ nav span {
 }
 
 /*------ Hamburger Logo ------*/
-nav svg {
+nav svg { 
     padding: 10px;
     margin-top: 2px;
 }
+
 
 /* ------ MENU - li a ---- --*/
 a{
     display: block;
     padding: 16px;
 }
+
+
 
 
 
