@@ -256,7 +256,6 @@ nav span {
 
 /*------ Controls Hamburger Logo Padding & Margin ------*/
 nav svg { 
-    
     padding: 10px;
     margin-top: 2px;
 }
@@ -293,8 +292,7 @@ a{
     margin: 20px;
 }
 /*This selector is JUMP TO RECIPE*/
-/*How do you extend the phras
-e*/
+/* -------- How do you extend the phrase ------- */
 #top menu li:nth-child(4) a {
     color: var(--red);
     font-size: 20px;
@@ -302,11 +300,52 @@ e*/
     padding: 10px;
     margin: 20px;
 }
-
+/* ----- ADDED SELECTOR BUT HAD NO EFFECT ----- */
 nav {
     list-style-type: none;
 }
-
-
-
-
+/* ----- h2 visibility is hidden */
+nav h2 {
+    visibility: hidden;
+    font-family: "Bebas Neue", system-ui;
+    font-size: 30px;
+    font-weight: bold;
+}
+/* ----- ADDED SELECTOR BUT HAD NO EFFECT ----- */
+#dropdown {
+    grid-area: menu;
+    width: 40px;
+    height: 40px;
+}
+/* ----- ADDED SELECTOR BUT HAD NO EFFECT ----- */
+nav label[for="dropdown"]
+{
+    grid-area:auto;
+}
+/* ----- ADDED SELECTOR BUT HAD NO EFFECT ----- */
+nav ul {
+    padding:0rem;
+    list-style: none;
+    text-decoration: none;
+    margin: 0 2rem 0 2rem;
+}
+/* ----- ADDED SELECTOR BUT HAD NO EFFECT ----- */
+nav a {
+    background-color: #7ABFBF;
+    color:#F2F2F2;
+    text-decoration: none;
+    padding: 0px 100px;
+    line-height: 40px;
+}
+/* ----- SHOWS NO EFFECT ----- */
+#logo {
+    grid-area: logo;
+    width: 40px;
+    height: 40px;
+}
+/* ----- ADDED SELECTOR BUT HAD NO EFFECT ----- */
+logo svg {
+    grid-area: logo;
+    width: 40px;
+    height: 40px;
+}
